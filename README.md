@@ -11,7 +11,10 @@ Please follow the instructions below for integration of the SDK into your mobile
 1.  **Add AdGridSDK reference to your project.**
 	* Add library
 		+  Manually add adgrid.aar into your project under “lib” directory
-		+  Add via Gradle. TBD*
+		+  Add via Gradle into "build.gradle" file
+```xml
+implementation "io.adgrid:adgridsdk:1.0.3"
+```
 		+  Add dependencies via “build.gradle” file
 
 ```xml
@@ -31,7 +34,7 @@ Example:
 android:value="ca-app-pub-3940256099942544~3347511713"/>
 ```
 
-2. **Initialize SDK**
+1. **Initialize SDK**
 
 ```kotlin
 val adGridSdk = AdGridSDK()
