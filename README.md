@@ -13,7 +13,7 @@ Please follow the instructions below for integration of the SDK into your mobile
 		+  Manually add adgrid.aar into your project under “lib” directory
 		+  Add via Gradle into "build.gradle" file
 ```xml
-implementation "io.adgrid:adgridsdk:1.0.3"
+implementation "io.adgrid:adgridsdk:1.0.4"
 ```
 		+  Add dependencies via “build.gradle” file
 
@@ -62,3 +62,7 @@ adGridSdk.adManagerOriginalApiSupport.displayAdViewOn({value}, {value}, {value},
 	Example of value: **AdSize(320, 50)**
 > 5.  adWrapperView: View – Container view of Ad <font color=red>*(required)</font>
 	Example of value: **adWrapperView**
+> 6.  extras: HashMap<String, String>? – Some extra key value pairs
+	Example of value: **mapOf("key1" to "value1", "key2" to "value2")**
+> 7.  adRefreshRateInMillis: Int – Ad refresh rate in milliseconds
+	Example of value: **30_000(30 sec)**
