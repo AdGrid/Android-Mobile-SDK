@@ -37,7 +37,10 @@ class GamOriginalApiDisplayBanner320x50Activity : BaseAdActivity() {
             AD_UNIT_ID,
             CONFIG_ID,
             AdSize(WIDTH, HEIGHT),
-            adWrapperView
+            adWrapperView,
+            null,
+            hashMapOf("key1" to "value1"),
+            30_000
         )
     }
 
