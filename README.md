@@ -13,7 +13,7 @@ Please follow the instructions below for integration of the SDK into your mobile
 		+  Manually add adgrid.aar into your project under “lib” directory
 		+  Add via Gradle into "build.gradle" file
 ```xml
-implementation "io.adgrid:adgridsdk:1.0.4"
+implementation "io.adgrid:adgridsdk:1.0.6"
 ```
 		+  Add dependencies via “build.gradle” file
 
