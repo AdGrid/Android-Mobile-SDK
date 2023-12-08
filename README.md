@@ -13,7 +13,7 @@ Please follow the instructions below for integration of the SDK into your mobile
 		+  Manually add adgrid.aar into your project under “lib” directory
 		+  Add via Gradle into "build.gradle" file
 		```xml
-		implementation "io.adgrid:adgridsdk:1.0.7"
+		implementation "io.adgrid:adgridsdk:1.1.1"
 		```
 		+  Add dependencies via “build.gradle” file
 
@@ -49,7 +49,7 @@ Example of value: **“adgrid_mobile_test_tagid”**
 1. **Display Ad View**
 
 ```kotlin
-adGridSdk.adManagerOriginalApiSupport.displayAdViewOn({value}, {value}, {value}, {value}, {value})
+adGridSdk.adManagerOriginalApiSupport.displayAdViewOn({value}, {value}, {value}, {value}, {value}, {value}, {value}, {value}, {value})
 ```
 
 >1. activity: Activity – Activity where you will show your ad <font color=red>*(required)</font>
@@ -66,6 +66,8 @@ Example of value: **adWrapperView**
 Example of value: **mapOf("key1" to "value1", "key2" to "value2")**
 >7. adRefreshRateInMillis: Int – Ad refresh rate in milliseconds
 Example of value: **30_000(30 sec)**
+>8. adFetchListener: IAdFetchListener? – Ad fetch result listener
+>9. adSizeListener: IAdSizeListener? – Ad size change listener
 
 ## Prebid Target header bindings
 
